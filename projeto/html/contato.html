@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Contato - Geni</title>
+    <link rel="stylesheet" href="../css/geni.css">
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="formacao.html">Formação</a></li>
+          <li><a href="disciplina.html">Disciplina</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <h3>Entre em Contato</h3>
+
+        <form action="/enviar_dados" method="post">
+          <div>
+            <label for="nome">Nome:</label>
+            <br>
+            <input type="text" id="nome" name="nome" required><br><br>
+          </div>
+
+          <div>
+            <label for="email">E-mail:</label>
+            <br>
+            <input type="email" id="email" name="email" required><br><br>
+          </div>
+
+          <div>
+            <label for="assunto">Assunto:</label>
+            <br>
+              <select id="assunto" name="assunto" required>
+                <option value="" disabled selected>-- Selecionar um assunto --</option>
+                <option value="duvidas">Dúvidas sobre o cargo</option>
+                <option value="orientacao">Orientações</option>
+                <option value="outros">Outros Assuntos</option>
+              </select><br><br>
+          </div>
+
+          <div>
+            <label for="mensagem">Mensagem:</label>
+            <br>
+            <textarea id="mensagem" name="mensagem" rows="2" required></textarea><br><br>
+          </div>
+
+          <div>
+            <input type="submit" value="Enviar">
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>@2025 Mariane e Hadriel. Todos os direitos reservados. Projeto acadêmico IFCE - Campus Maranguape.</p>
+    </footer>
+  </body>
+</html>
